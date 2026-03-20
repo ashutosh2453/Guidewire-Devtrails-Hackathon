@@ -317,10 +317,10 @@ Routing:
   50–79 → 50% now, 50% after 24hr check
   < 50  → Human review queue (rare edge case)
 ```
-![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/pricing.html)
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/71a4a0c2cc0a3e00b5785c7403deefc49ceefceb/assests/pricingg.png)
 
 
-![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/analytics.html)
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/71a4a0c2cc0a3e00b5785c7403deefc49ceefceb/assests/analyticss.png)
 ---
 
 ## 🏗️ Tech Stack
