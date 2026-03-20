@@ -164,7 +164,7 @@ FRIDAY (Weekly summary dashboard)
 │  Real-time trigger event queue         │  Google Maps Static API    │
 └────────────────────────────────────────┴────────────────────────────┘
 ```
-
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b912e6969bc0176276331066fc6ee65befab7768/assests/shieldkart_system_architecture.svg)
 ---
 
 ## 🔥 5 Parametric Triggers
