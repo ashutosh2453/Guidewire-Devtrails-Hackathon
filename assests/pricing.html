@@ -1,0 +1,57 @@
+<div style="padding: 0.5rem 0">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1rem;border:0.5px solid var(--color-border-tertiary)">
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-bottom:4px">Basic plan</div>
+    <div style="font-size:26px;font-weight:500;color:var(--color-text-primary)">₹29<span style="font-size:13px;font-weight:400;color:var(--color-text-secondary)">/week</span></div>
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-top:6px">Covers ₹200/day · max 2 days</div>
+    <div style="font-size:12px;color:var(--color-text-secondary)">Up to ₹400/week protected</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1rem;border:2px solid var(--color-border-info)">
+    <div style="font-size:11px;background:var(--color-background-info);color:var(--color-text-info);border-radius:4px;padding:2px 8px;display:inline-block;margin-bottom:4px">Most popular</div>
+    <div style="font-size:26px;font-weight:500;color:var(--color-text-primary)">₹49<span style="font-size:13px;font-weight:400;color:var(--color-text-secondary)">/week</span></div>
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-top:6px">Covers ₹350/day · max 3 days</div>
+    <div style="font-size:12px;color:var(--color-text-secondary)">Up to ₹1,050/week protected</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1rem;border:0.5px solid var(--color-border-tertiary)">
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-bottom:4px">Premium plan</div>
+    <div style="font-size:26px;font-weight:500;color:var(--color-text-primary)">₹79<span style="font-size:13px;font-weight:400;color:var(--color-text-secondary)">/week</span></div>
+    <div style="font-size:12px;color:var(--color-text-secondary);margin-top:6px">Covers ₹500/day · max 5 days</div>
+    <div style="font-size:12px;color:var(--color-text-secondary)">Up to ₹2,500/week protected</div>
+  </div>
+</div>
+
+<div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary)">
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#378ADD;display:inline-block"></span>Weekly premium (₹)</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75;display:inline-block"></span>Max weekly coverage (₹)</span>
+</div>
+<div style="position:relative;width:100%;height:220px">
+  <canvas id="priceChart"></canvas>
+</div>
+
+<div style="margin-top:20px;padding:12px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);border-left:3px solid #EF9F27">
+  <div style="font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px">Zone risk multiplier applied on top</div>
+  <div style="font-size:12px;color:var(--color-text-secondary)">Low risk zone (score 0–30): 0.85× discount &nbsp;|&nbsp; Medium (31–60): 1.0× base &nbsp;|&nbsp; High risk (61–100): 1.15× surcharge</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+new Chart(document.getElementById('priceChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Basic', 'Standard', 'Premium'],
+    datasets: [
+      { label: 'Weekly premium', data: [29, 49, 79], backgroundColor: '#378ADD', borderRadius: 6, barPercentage: 0.4 },
+      { label: 'Max weekly coverage', data: [400, 1050, 2500], backgroundColor: '#1D9E75', borderRadius: 6, barPercentage: 0.4 }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => '₹' + ctx.parsed.y.toLocaleString() } } },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { size: 12 } } },
+      y: { grid: { color: 'rgba(100,100,100,0.1)' }, ticks: { font: { size: 11 }, callback: v => '₹' + v.toLocaleString() } }
+    }
+  }
+});
+</script>
