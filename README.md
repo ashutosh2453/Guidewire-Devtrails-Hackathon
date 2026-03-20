@@ -1,4 +1,4 @@
-# 📦 ShieldKart — AI-Powered Parametric Income Protection
+# 📦 GigSheild — AI-Powered Parametric Income Protection
 
 <div align="center">
 
@@ -54,9 +54,9 @@ This is **Delivery Zone Intelligence (DZI)** — the core innovation that separa
 | Weather-only trigger | Misses platform activity drops, civic disruptions, GPS movement collapse |
 | Manual claims | Creates fraud risk, payout delays, and UX friction gig workers can't afford |
 
-### ShieldKart vs. Competitors
+### GigSheild vs. Competitors
 
-| Feature | Generic Solution | ShieldKart |
+| Feature | Generic Solution | GigSheild |
 |---|---|---|
 | Premium pricing | City-level flat rate | Zone-level dynamic rate (2km² micro-zones) |
 | Trigger detection | Weather API only | Weather + AQI + Civic + Platform drop + GPS entropy |
@@ -92,7 +92,7 @@ This is **Delivery Zone Intelligence (DZI)** — the core innovation that separa
 
 ```
 MONDAY (Onboarding — 3 minutes)
-  ├─ Opens ShieldKart PWA via WhatsApp link
+  ├─ Opens GigSheild PWA via WhatsApp link
   ├─ Aadhaar OTP KYC-lite verification
   ├─ Links Amazon Flex Partner ID
   ├─ GPS registers zone: Vijay Nagar, Indore
@@ -111,7 +111,7 @@ WEDNESDAY 9:00 AM (Disruption detected)
 
 WEDNESDAY 9:07 AM (Payout)
   ₹350 credited to Raju's UPI ID instantly
-  WhatsApp: "ShieldKart ne ₹350 bheja! 🛡️ Aaj ke nuksaan se protected ho."
+  WhatsApp: "GigSheild ne ₹350 bheja! 🛡️ Aaj ke nuksaan se protected ho."
 
 FRIDAY (Weekly summary dashboard)
   "Week protected. ₹350 recovered. Net disruption loss: ₹0."
@@ -258,7 +258,7 @@ risk_score = rain_probability * 0.5 + pollution_level * 0.3 + traffic_index * 0.
 
 ### Why Weekly Pricing
 
-| Monthly Model (Competitors) | Weekly Model (ShieldKart) |
+| Monthly Model (Competitors) | Weekly Model (GigSheild) |
 |---|---|
 | ₹200–400/month feels large upfront | ₹29–79/week feels minimal |
 | Unaffordable with variable income | Same UPI autopay day as platform payout |
@@ -361,7 +361,7 @@ INFRASTRUCTURE
 ## 📁 Repository Structure
 
 ```
-shieldkart/
+GigSheild/
 ├── frontend/
 │   └── src/
 │       ├── pages/
@@ -504,7 +504,7 @@ We chose **Web (PWA) over Native Mobile** for:
 
 <div align="center">
 
-ShieldKart — Because every delivery partner deserves a safety net as reliable as the platforms they power.
+GigSheild — Because every delivery partner deserves a safety net as reliable as the platforms they power.
 
 *Guidewire DEVTrails 2026 · Phase 1 Submission · E-Commerce Delivery Persona*
 
