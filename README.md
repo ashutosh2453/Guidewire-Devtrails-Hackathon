@@ -179,6 +179,9 @@ FRIDAY (Weekly summary dashboard)
 | T4 | 🚫 Curfew / bandh / lockdown | Govt alert + Maps traffic | Zone movement < 20% of normal | Zone inaccessible |
 | T5 | 🌫️ Dense fog / zero visibility | Open-Meteo | Visibility < 200m for > 4 hrs | Delivery unsafe |
 
+
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/shieldkart_5_triggers.svg)
+  
 ```
 Multi-trigger bonus:
   2+ triggers firing simultaneously → payout × 1.25  (+25%)
@@ -207,7 +210,7 @@ Human  50% instant      AUTO-APPROVE
 review 50% in 24hr      Instant full payout
 (rare) validation       Target: 85%+ of claims
 ```
-
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/shieldkart_claim_flow.svg)
 ---
 
 ## 💰 Weekly Premium Model
@@ -314,7 +317,10 @@ Routing:
   50–79 → 50% now, 50% after 24hr check
   < 50  → Human review queue (rare edge case)
 ```
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/pricing.html)
 
+
+![image alt](https://github.com/ashutosh2453/Guidewire-Devtrails-Hackathon/blob/b0e3856e20ffe86763e4b7d57361811ce049ceb6/assests/analytics.html)
 ---
 
 ## 🏗️ Tech Stack
