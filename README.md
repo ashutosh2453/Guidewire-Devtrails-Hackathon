@@ -164,7 +164,7 @@ FRIDAY (Weekly summary dashboard)
 │  Real-time trigger event queue         │  Google Maps Static API    │
 └────────────────────────────────────────┴────────────────────────────┘
 ```
-![System Architecture](./assets/shieldkart_system_architecture.svg)
+
 ---
 
 ## 🔥 5 Parametric Triggers
@@ -185,7 +185,7 @@ Multi-trigger bonus:
   Example: T1 flood + T3 platform crash on same day
   Standard plan: ₹350 × 1.25 = ₹437.50 paid out
 ```
-![Parametric Triggers](./assets/shieldkart_5_triggers.svg)
+
 ### Zero-Touch Claim Flow
 
 ```
@@ -207,7 +207,7 @@ Human  50% instant      AUTO-APPROVE
 review 50% in 24hr      Instant full payout
 (rare) validation       Target: 85%+ of claims
 ```
-![Zero Touch Claim Flow](./assets/shieldkart_claim_flow.svg)
+
 ---
 
 ## 💰 Weekly Premium Model
@@ -263,9 +263,9 @@ risk_score = rain_probability * 0.5 + pollution_level * 0.3 + traffic_index * 0.
 | Delays trust-building | Builds trust incrementally week-by-week |
 
 
-![Pricing Plans](./assets/pricing.html)
 
-![Analytics Dashboard](./assets/analytics.html)
+
+
 ---
 
 ## 🤖 AI / ML Integration Plan
